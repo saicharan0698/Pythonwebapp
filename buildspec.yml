@@ -16,15 +16,15 @@ phases:
       # - There are no build commands
   pre_build:
     commands:
+      - pip install --upgrade pip
       - pip install -r requirements.txt
-      - pip install -e .
   build:
     commands:
       - pytest tests/unit/
       - pytest tests/integration/ -rfs
   post_build:
     commands:
-      - python setup.py sdist bdist_wheel
+      - python App.py sdist bdist_wheel
 #artifacts:
   #files:
     # - We don't currently preserve any artifacts
