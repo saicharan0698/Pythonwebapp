@@ -23,7 +23,7 @@ phases:
       - python App.py sdist bdist_wheel
   post_build:
     commands:
-      - printf '[{"name":"pyweb:1","public.ecr.aws/n9x6h7o5/sairepo":"%s"}]' 068992237748.dkr.ecr.ap-northeast-1.amazonaws.com/sairepo:latest > imagedefinitions.json
+      - printf '[{"name":"pyweb:1","public.ecr.aws/n9x6h7o5/sairepo"}]' 068992237748.dkr.ecr.ap-northeast-1.amazonaws.com/sairepo:latest > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
 #artifacts:
