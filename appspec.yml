@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-northeast-1:068992237748:task-definition/pyweb:1"
+        LoadBalancerInfo:
+          ContainerName: "mycont"
+          ContainerPort: 8501
