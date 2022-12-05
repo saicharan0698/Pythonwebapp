@@ -21,13 +21,6 @@ phases:
   post_build:
     commands:
       - python App.py sdist bdist_wheel
-      
-  artifacts:
-  files:
-    - '**/*'
-  base-directory: base_dir
-  name: build-artifact-name
-  discard-paths: no
 #artifacts:
   #files:
     # - We don't currently preserve any artifacts
