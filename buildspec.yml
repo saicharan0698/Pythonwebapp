@@ -18,10 +18,6 @@ phases:
     commands:
       - pip install --upgrade pip
       - pip install -r requirements.txt
-  build:
-    commands:
-      - pytest tests/unit/
-      - pytest tests/integration/ -rfs
   post_build:
     commands:
       - python App.py sdist bdist_wheel
