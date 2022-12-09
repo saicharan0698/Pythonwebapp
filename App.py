@@ -76,7 +76,7 @@ def display_news(list_of_news, news_quantity):
 
 
 def run():
-    st.title("InNews🇮🇳: A Summarised News📰")
+    st.title("InNews🇮🇳: A Summariseddd Newssss📰")
     image = Image.open('./Meta/newspaper.png')
 
     col1, col2, col3 = st.columns([3, 5, 3])
