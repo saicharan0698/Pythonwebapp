@@ -7,7 +7,7 @@ import io
 import nltk
 nltk.download('punkt')
 
-st.set_page_config(page_title='InNews🇮🇳: A Summariseddd Newsss📰 Portal', page_icon='./Meta/newspaper.ico')
+st.set_page_config(page_title='InNews🇮🇳: A Summarised News📰 Portal', page_icon='./Meta/newspaper.ico')
 
 
 def fetch_news_search_topic(topic):
@@ -76,7 +76,7 @@ def display_news(list_of_news, news_quantity):
 
 
 def run():
-    st.title("InNews🇮🇳: A Summariseddd Newssss📰")
+    st.title("InNews🇮🇳: A Summarised News📰")
     image = Image.open('./Meta/newspaper.png')
 
     col1, col2, col3 = st.columns([3, 5, 3])
@@ -89,7 +89,7 @@ def run():
 
     with col3:
         st.write("")
-    category = ['--Select--', 'Trendinggg🔥 News', 'Favourite💙 Topics', 'Search🔍 Topic']
+    category = ['--Select--', 'Trending🔥 News', 'Favourite💙 Topics', 'Search🔍 Topic']
     cat_op = st.selectbox('Select your Category', category)
     if cat_op == category[0]:
         st.warning('Please select Type!!')
